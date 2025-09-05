@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom'
 function HomeBottomText() {
   return (
    <div className='font-[font2] flex items-center justify-center gap-2 '>
-    <Link className='text-white text-[5.5vw] pb-4 leading-[6vw] border-4   border-white rounded-full px-10 uppercase'>Projects</Link>
+<div className='border-4 border-white hover:border-[#D3FD50] hover:text-[#D3FD50]  rounded-full h-44 flex items-center px-14 uppercase  transition-colors duration-300'>
+      <Link className='text-white text-[6vw] mt-6' to='/projects'>Projects</Link>
+</div>
+<div className='border-4 border-white hover:border-[#D3FD50] hover:text-[#D3FD50]  rounded-full h-44 flex items-center px-14 uppercase'>
+        <Link className='text-white text-[6vw] mt-6' to='/agency'>Agence</Link>
+</div>
 
-    <Link className='text-white text-[5.5vw] pb-4 leading-[6vw] border-4 rounded-full border-white uppercase px-10'>Agence</Link>
    </div>
   )
 }
